@@ -1,0 +1,31 @@
+.grid-container{
+    width:90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px
+}
+
+.image-card{
+    position: relative;
+    padding:2px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.image{
+    width:100%;
+}
+
+.location-tag{
+    position:absolute;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+   
+}
+
+.location-tag>div{
+    font-size: 1.5vw;
+    color: bisque;
+
+}

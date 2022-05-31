@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.App{
+  min-height: 100vh;
+  position: relative;
+  background-color:#565f66;
+}
+
+/*navbar*/
+.navbar{
+  position:sticky;
+  z-index:10;
+}
+
+.navbar-dark .navbar-brand{
+  color: yellow;
+}
+
+
+/*camera*/
+.camera{
+  position: relative;
+}
+.camera-label{
+  
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  
+}
+
+.fa-circle-dot{
+  position:absolute;
+  bottom:1vh;
+  left:50vw;
+  font-size:2em;
+  color: rgb(128, 8, 8);
+
+}
+
+.fa-circle-dot:hover,
+.fa-circle-dot:focus {
+  color: #ea1212;;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+video{
+  position: fixed;
+  right:0;
+  bottom:0;
+  min-width: 100%;
+  min-height: 100%;
+  /* width : 100%;
+  max-width: 100%;
+  height: auto; */
+}
+
+.cameraContainer{
+  position: relative;
+  z-index:6;
+}
+
+.camera button{
+  position:absolute;
+  bottom: 20px;
+  left: 20px;
+
+  appearance: none;
+  border:none;
+  outline:none;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to
+  right, #844FFF 50%, #FF4F84 50%);
+  background-position: 0%;
+  background-size:200% ;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-position: 100%;
+}
+
+
+/*Modal image*/
+
+.outerModal{
+  position: relative;
+  z-index:6;
+}
+
+
+
+/* Modal Content (Image) */
+.canvas-content {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height:90vh;
+  
+  z-index:5;
+
+ 
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 6;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*gallery float*/
+
+.plus-float {
+  position: fixed;
+  font-size: 3em;
+  bottom: 20px;
+  right: 40px;
+  color: rgba(237, 237, 14, 0.858);
+  text-align: center;
+  
+  margin-top: 22px;
+}
+
+.plus-float:hover {
+  transition-delay: 100ms;
+  color: rgb(255, 255, 0);
+ 
+}
+
